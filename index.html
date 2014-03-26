@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AJAX Submit Button One-Liner</title>
+    <style>
+      .container{
+        margin: 0px auto;
+        width: 400px;
+      }
+
+      .container fieldset{
+        width: 400px;
+      }
+
+      .container fieldset input,
+      .container fieldset label{
+        float: right;
+        padding-bottom: 30px;
+      }
+
+      .container fieldset input{
+        clear: right;
+        width: 200px;
+      }
+
+      .container fieldset label{
+        padding: 4px 20px;
+        text-align: right;
+      }
+
+      .container fieldset button{
+        float: right;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form id="success-test" action="http://example.com/failure">
+        <label>This form will fail</label>
+        <fieldset>
+          <input placeholder="Field One"><label>Field One:</label>
+          <input placeholder="Field Two"><label>Field Two:</label>
+          <input placeholder="Field Three"><label>Field Three:</label>
+          <button class="btn btn-primary">This button will fail!</button>
+        </fieldset>
+      </div>
+
+  </body>
+</html>
