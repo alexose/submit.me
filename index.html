@@ -42,9 +42,26 @@
           <input placeholder="Field One"><label>Field One:</label>
           <input placeholder="Field Two"><label>Field Two:</label>
           <input placeholder="Field Three"><label>Field Three:</label>
-          <button class="btn btn-primary">This button will fail!</button>
+          <button class="btn btn-primary" id="submit-button" onclick="
+
+            var base64 = 'data:image/gif;base64,R0lGODlhEAAQAAAAACH/C05FVFNDQVBFMi4wAwH//wAh+QQLCgAPACwAAAAAEAAQAINjY2N7e3uMjIylpaW9vb3///////////////////////////////////////////8EQPDJ+QCgmFqbZwjVFmLfN26XV2oiZWLcJAjdRBDPPNf3rdOdHm5Xe9wog0HmiEwqbb1m0ogTYqZWZpAwwBWhnQgAIfkECwoADwAsAAAAABAAEACDY2Nje3t7jIyMpaWlvb29////////////////////////////////////////////BEDwyflCoJham6cQ1fYAAPZ94UiW3kmtbJuR1DB0E23bOLzfHdiDh1NRCIQMEoNcTprJJ2GQXEKZ1ebD2bkWpZ0IACH5BAsKAA8ALAAAAAAQABAAg2NjY3t7e4yMjKWlpb29vf///////////////////////////////////////////wRB8Mn5hKCYWpvnGNX2BAH2feFIlt5JrWybkRRBdBMAPLaN6zrb4NYB7ny4h65GpCyZSIkRevNNmbyecofrNZPZTgQAIfkECwoADwAsAAAAABAAEACDY2Nje3t7jIyMpaWlvb29////////////////////////////////////////////BEHwyfnGoJhamych1fYIAvZ94UiWHjGA08q2GUmhnRQEzwlnu50vF+ThiDwaBgAwnShM5u0pjTanD2v22tHmoFxKBAAh+QQLCgAPACwAAAAAEAAQAINjY2N7e3uMjIylpaW9vb3///////////////////////////////////////////8EQfDJ+QihmFqbJ7fDNQzYdnHjqG1USq6Z6l2dJAgV2923WfM4Tu1xowAAmUAAczxSlEpj8+GELqXUabTWRA4nzkwEACH5BAsKAA8ALAAAAAAQABAAg2NjY3t7e4yMjKWlpb29vf///////////////////////////////////////////wRD8Mn5CKGYWpsn3xenbVVIeqdkDdeYiRIAdNMwPLJM23Y+d7ybjvawUYYUgQDjSyqXk2Yg8HhCo7PptHrNaKnEyTYTAQAh+QQLCgAPACwAAAAAEAAQAINjY2N7e3uMjIylpaW9vb3///////////////////////////////////////////8EQPDJ+QihmFqbJwDVFmLfN26XV2oiZWKc2k1cCXaoPVvD9e4pSSCQGQwwwyHFaKQkiQLBg3l0QqPS5gwrnVGinQgAIfkECwoADwAsAAAAABAAEACDY2Nje3t7jIyMpaWlvb29////////////////////////////////////////////BELwyfkAoJhamyffF0FgYBWKo7dRaKpmIhUE3RTPc93idNc+udojNhEIYC6J0chCUZbHwWBIGCQfTKmUKtROhZNtJgIAOw=='
+            var xhr = new XMLHttpRequest();
+            var url = 'placeholder';
+
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState < 4) { return; }
+                if(xhr.status !== 200) { return; }
+
+                // all is well
+                if(xhr.readyState === 4){ }
+            }
+
+            xhr.open('POST', url, true);
+            xhr.send('');
+
+            return false;
+          ">This button will fail!</button>
         </fieldset>
       </div>
-
   </body>
 </html>
